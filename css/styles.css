@@ -1,0 +1,262 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-1-2 {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #4415ff;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cta {
+  background-color: #3c64b1;
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn-more {
+  border-radius: 0;
+  border-color: #ccc;
+}
+
+html {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  width: 100vw;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 1440px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header > h2 {
+  margin-bottom: 0.1rem;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.header .wrapper nav {
+  display: none;
+}
+
+.menu-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 3rem;
+  height: 2.5rem;
+}
+
+.menu-icon > span {
+  display: block;
+  width: 2.2rem;
+  height: 1px;
+  background-color: #4415ff;
+}
+
+.menu-icon > span:nth-child(1) {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.menu-icon > span:nth-child(3) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.hero {
+  min-height: 20rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 34, 94, 0.7)), to(rgba(47, 34, 94, 0.7))), url("https://picsum.photos/id/237/200/300");
+  background-image: linear-gradient(-90deg, rgba(47, 34, 94, 0.7), rgba(47, 34, 94, 0.7)), url("https://picsum.photos/id/237/200/300");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.hero .wrapper {
+  padding: 5rem 0;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.success-stories__img {
+  overflow: hidden;
+  width: 90vw;
+  max-height: 90vw;
+  margin-bottom: 1rem;
+}
+
+.success-stories figcaption p {
+  font-size: 1.2rem;
+}
+
+.recommended-item {
+  margin-bottom: 2rem;
+}
+
+.recommended__img {
+  overflow: hidden;
+  width: 90vw;
+  max-height: 40vw;
+  margin-bottom: 1rem;
+}
+
+.recommended__details > p:nth-child(1) {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.recommended__details > span {
+  display: block;
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.recommended__details .donation-progress {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  height: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.top-project,
+.popular-project {
+  text-align: center;
+}
+
+.top-project h2,
+.popular-project h2 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.top-project {
+  background-color: #e1e1e1;
+  color: #555;
+}
+
+.top-project h2 {
+  color: #000;
+}
+
+.top-project__img {
+  overflow: hidden;
+  width: 90vw;
+  max-height: 60vw;
+  margin-bottom: 2rem;
+}
+
+.top-project__goal {
+  margin-bottom: 1.3rem;
+  font-size: 1.4rem;
+}
+
+.top-project__description {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
