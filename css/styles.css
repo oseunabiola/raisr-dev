@@ -1,3 +1,5 @@
+/* LAYOUT
+---------------------------*/
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,14 +13,55 @@
   padding-bottom: 2rem;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* SPACING
+---------------------------*/
+.mh-0-5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FONT WEIGHT & SIZE
+---------------------------*/
 .fw-600 {
   font-weight: 600;
 }
 
-.fw-1-2 {
+.fs-1-2 {
   font-size: 1.2rem;
 }
 
+/* BUTTON
+---------------------------*/
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -38,6 +81,12 @@
 .btn-more {
   border-radius: 0;
   border-color: #ccc;
+}
+
+/* COLOR
+---------------------------*/
+.color-primary {
+  color: #4415ff;
 }
 
 html {
@@ -60,6 +109,7 @@ ul {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -224,15 +274,16 @@ header > h2 {
   overflow: hidden;
 }
 
-.top-project,
-.popular-project {
+.section .wrapper header > h2 {
   text-align: center;
-}
-
-.top-project h2,
-.popular-project h2 {
   font-size: 1.4rem;
   padding: 1rem 0;
+}
+
+.top-project,
+.popular-project,
+.how-we-work {
+  text-align: center;
 }
 
 .top-project {
@@ -258,5 +309,55 @@ header > h2 {
 
 .top-project__description {
   margin-bottom: 2rem;
+}
+
+.how-we-work-items-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-we-work-item {
+  max-width: 255px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2rem 1rem;
+}
+
+.how-we-work-item__icon {
+  width: 100%;
+  height: 260px;
+  margin: 1rem auto;
+  background-color: #ededed;
+}
+
+.how-we-work-item__icon div {
+  background-color: #dcdcdc;
+  width: 60%;
+  margin: 0 auto;
+  height: 10rem;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #182f37;
+  min-height: 6rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+footer .terms {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+footer .terms ul li {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
