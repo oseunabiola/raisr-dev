@@ -55,10 +55,11 @@
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
+  color: $primary-accent;
 }
 .cta {
   background-color: $cta-color;
-  color: $white;
+  color: $white !important;
   border-color: transparent;
 }
 .btn-more {
@@ -71,4 +72,7 @@
 
 .color-primary {
   color: $primary-accent;
+}
+.bg-primary {
+  background-color: $primary-accent;
 }
